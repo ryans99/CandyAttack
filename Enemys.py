@@ -1,4 +1,4 @@
-#Tower class
+#Enemy class
 #Justin Vicinte, Christopher Campos
 # 13 may, 2017
 class Enemy():
