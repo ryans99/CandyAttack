@@ -3,11 +3,23 @@
 # 13 may, 2017
 class Enemy():
 
-    def __init__(self,EnemyType,EnemySpeed,EnemyHealth):
+    def __init__(self,EnemyType,EnemySpeed,EnemyHealth,EnemyCoordinates):
 
         self.type = EnemyType
         self.speed = EnemySpeed
-        self.health = EnemyHealth
+        self.Total_health = EnemyHealth
+        self.Current_health = EnemyHealth
+        self.x = EnemyCoordinates.x
+        self.y = EnemyCoordinates.y
 
-    def heal(self):
-        self.health += self.health
+
+    def Move_Forward(self):
+        self.y += 1
+
+    def Move_Left(self):
+        self.x += 1
+
+    def Move_Right(self):
+        self.x -= 1
+
+    #def Move_Possible(self):
