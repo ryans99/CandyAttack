@@ -1,4 +1,4 @@
-from tkinter import *
+ from tkinter import *
 import time
 from Tower import Tower
 from CandyCoordinates import Coordinates
@@ -7,7 +7,7 @@ start_time = time.time()
 grid = []
 entitygrid=[]
 level = 1
-window = Tk()
+window = Tk() #creates gui
 canvas = Canvas(window,bg="#e1ff89",height=950,width=950)
 canvas.create_oval(11,11,41,41,fill="yellow")
 for _ in range(2^level):
